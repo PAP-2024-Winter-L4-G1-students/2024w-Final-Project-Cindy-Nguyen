@@ -1,0 +1,164 @@
+.header {
+    height: 50vh;
+    width: 100%;
+    padding: 0;
+    background: white;
+    position: relative;
+}
+
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-size: medium;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 5px;
+    color: rgb(40, 129, 15);
+    display: right;
+    justify-content: center;
+    margin: 0;    
+
+}
+
+body {font-family:Verdana, Geneva, Tahoma, sans-serif;}
+h2, h3, h4, h5, h6 {
+    font-family: "Verdana";
+    letter-spacing: 5px;
+    color: rgb(40, 129, 15);
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center;
+    background-size: cover;
+}
+
+.topnav {
+    background-color: #a7c957;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Style the links inside the navigation bar, adjusting from nav ul li a to .topnav a */
+  .topnav a {
+    display: inline-block;
+    color: #ffffff; /* Updated color for better visibility against the dark background */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #fa5353;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Adjusted from nav:after for clearing floats */
+  .topnav:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.output-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flexbox;
+
+}
+
+#food-background {
+    padding: auto; /* Adjust padding as needed */
+    background-position: center; /* Center the background image */
+    background-size:cover; /* Cover the entire container without stretching */
+    background-repeat: no-repeat; /* Prevent background repetition */
+    min-height: 115vh; /* Minimum height to fill the viewport */
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    color: black;
+    text-align: center;
+}
+
+#main {
+    background-color: #6a994e;
+}
+
+/* Container for the box with a caption */
+.box-container {
+    max-width: 100%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    border: 1px solid black; /* Border color */
+    padding: 20px; /* Padding inside the box */
+    text-align: center; /* Center text inside the box */
+}
+
+/* Caption styling */
+.box-caption {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between caption and content */
+    color: rgb(40, 129, 15);
+}
+
+/* Content inside the box */
+#introduction {
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* Style for the search results and random meal display */
+#results, #mealDisplay {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid container */
+}
+
+/* Style for each meal item */
+.meal-item {
+border: 1px solid black; /* Border around each meal */
+    border-radius: 8px; /* Rounded corners for the border */
+    overflow: hidden; /* Ensures content fits within the borders */
+
+}
+
+.meal-item img {
+    width: 100%; /* Makes image fill the container */
+    height: auto; /* Keeps the aspect ratio of the image */
+    display: block; /* Removes bottom space under the image */
+}
+
+.meal-item h3 {
+    margin: 10px; /* Margin around the title */
+    text-align: center; /* Center-aligns the title */
+}
+
+.meal-item p {
+    padding: 0 10px 10px; /* Padding around the text */
+    text-align: justify; /* Justifies the text */
+}
+

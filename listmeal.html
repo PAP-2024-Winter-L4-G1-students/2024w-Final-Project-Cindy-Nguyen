@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Meals</title>
+    <link rel="stylesheet" href="style.css">     
+</head>
+<body>
+    <div class="topnav">
+        <nav>     
+            <ul>
+                <h1 id="logo" class="btn">Eat@Ease </h1>
+                <a href="index.html"class="btn">Home</a>
+                <a href="search.html"class="btn">Search</a>
+                <a href="listmeal.html"class="btn">List Meals</a>
+                <a href="generator.html"class="btn">Generator</a>
+            </ul>                    
+        </nav>
+    </div>
+
+    <!-- list meals by first letter  -->
+    <div class="box-container">
+        <div class="box-caption">List Meals by First Letter</div>
+        <label for="firstLetterInput"> Enter a Letter:</label>
+        <input type="search" id="firstLetterInput">
+        <button id="listByFirstLetterButton">Search</button>
+        <button onclick="clearInputAndPage()"></button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
